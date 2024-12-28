@@ -15,7 +15,7 @@ def get_video_url():
         ydl_opts = {
             'format': 'best',
             'noplaylist': True,
-            'quiet': True
+            'quiet': True,
             'extract_flat': False  # تفعيل هذا الخيار إذا كنت تريد الروابط المباشرة دون تحليل إضافي
         }
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
